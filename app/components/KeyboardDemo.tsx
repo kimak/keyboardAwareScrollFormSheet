@@ -1,4 +1,4 @@
-import { StyleSheet, View } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 
 import { KeyboardAwareScrollView } from "react-native-keyboard-controller";
 import { TextInput } from "./TextInput";
@@ -24,5 +24,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     flex: 1,
+    minHeight: Dimensions.get("screen").height,
   },
 });
